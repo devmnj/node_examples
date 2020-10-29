@@ -11,7 +11,7 @@ Following npm pacakages used in this project
 * ejs templating engine
 * express
 
-I also utilized the `nodemon` package which indeed a good tool for auto reload while changing the code.
+I also utilized the `nodemon` package which indeed a good tool for `auto reload` while coding and debugging process.
 
 You can install all dependencies by running 
 
