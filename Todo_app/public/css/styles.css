@@ -1,0 +1,96 @@
+body {
+    background-color: skyblue;
+}
+
+h2 {
+    text-align: center;
+}
+
+.container {
+    /* background-color: skyblue; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5 px;
+}
+
+.content-left-wrapper {
+    padding: 2px;
+}
+
+.content-right-wrapper {
+    padding: 2px;
+}
+
+.content-wrapper {
+    padding: 12px;
+    font-size: 18px;
+}
+
+.todo-items-wrapper {
+    background-color: lightseagreen;
+    border-radius: 6px;
+    padding: 15px;
+    min-height: 170px;
+}
+
+.todo-form-items-wrapper {
+    background-color: wheat;
+    border-radius: 6px;
+    padding: 15px;
+    position: relative;
+    min-height: 170px;
+}
+
+.todo-form-wrapper {
+    padding: 12px;
+    font-size: 18px;
+}
+
+.content-left-wrapper h2,
+.content-right-wrapper h2 {
+    color: lightslategray;
+}
+
+.todo-form-item {
+    display: flex;
+    position: relative;
+    padding: 4px;
+}
+
+.todo-item-wrapper {
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: darkcyan;
+    justify-content: space-between;
+    color: antiquewhite;
+    margin: 5px;
+}
+
+
+/* Style the input text button */
+
+input[type=text],
+select,
+textarea {
+    width: 200%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+
+/* Style the submit button */
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Todo App - Nodejs </title>
+</head>
+
+<body>
+    <h1 style="text-align: center">Nodejs App : Todo App</h1>
+    <div class="container">
+        <div class="content-left-wrapper">
+            <h2 style="padding-left: 110px;"> List of Todos </h2>
+            <div class="content-wrapper">
+                <div class="todo-items-wrapper">
+                    <% todos.forEach(function(todo){%>
+                        <div class="todo-item-wrapper">
+                            <div class="todo-list-text">
+                                <%= todo.item   %>
+                            </div>
+                            <div class="todo-list-action">
+                                <a href="/todo/<%= todo.id %> ">Delete</a>
+                            </div>
+                        </div>
+                        <% }) %>
+                </div>
+
+            </div>
+        </div>
+        <div class="content-right-wrapper">
+            <h2>Tap New todo</h2>
+            <div class="todo-form-wrapper">
+                <div class="todo-form-items-wrapper">
+                    <form action="/" method="POST">
+                        <div class="todo-form-item">
+                            <p style="text-align: left;"> <i> eg: Learn Python from Udemy</i></p>
+                        </div>
+                        <div class="todo-form-item">
+                            <input type="text" placeholder="Eneter your todo" name="todo_content" id="todo_content">
+                        </div>
+                        <div class="todo-form-item">
+                            <input type="submit" value="Post">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
