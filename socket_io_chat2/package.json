@@ -1,0 +1,20 @@
+{
+    "name": "socke_io_chat2",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "dependencies": {
+        "express": "^4.10.2",
+        "http": "^0.0.1-security",
+        "path": "^0.12.7",
+        "socket.io": "^3.0.1",
+        "socketio": "^1.0.0"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "dev": "nodemon index.js localhost:3000",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC"
+}

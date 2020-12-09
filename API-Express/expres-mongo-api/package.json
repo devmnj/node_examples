@@ -1,0 +1,20 @@
+{
+  "name": "expres-mongo-api",
+  "version": "1.0.0",
+  "description": "Node API with MongoDB",
+  "main": "app.js",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "Manoj A.P",
+  "license": "ISC"
+}
