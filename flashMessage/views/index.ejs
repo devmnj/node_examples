@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Flash Message</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       <h1>Express-Flash</h1>
+       <h4></h4>
+    </head>
+    <body>
+    <div class="container">
+       <% const m=getMessages() %>
+      
+       <% if (m.notify) { %>
+        <% m.notify.forEach((element) => { %>
+        <%= element %>
+        <% }) %>
+       <% } %>
+
+        </div>
+
+    </body>
+</html>
