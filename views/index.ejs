@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Submit site to Google</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+       <link rel="stylesheet" href="/assets/css/layout.css">
+       <h1>Free Search engine submission</h1>
+       <h4>Bing and Google</h4>
+    </head>
+    <body>
+    <div class="container">
+      <section class="search_container">
+
+       <form action="/" method="POST" class="form-group"  >
+  
+       <% const m=getMessages() %>     
+       <% if (m.notify) { %>
+       <div class="alert alert-success">
+        <% m.notify.forEach((element) => { %>
+        <%= element %>
+        <% }) %>
+        </div>
+       <% } %>
+
+
+           <input placeholder='Sitemap please'  class="form-control search_box" type="text" name="siteUrl" id="siteUrl">
+           <button class="btn btn-primary submitButton" type="submit">Submit</button>
+       </form>
+      </section>
+
+      <div class="footer text-center">
+          Powered by <a href="https:\\developerm.dev">Developer Blog </a>
+          <a href="https:\\github.com\manojap\easysitemap"> GitHub Repository </a> | 
+          Developer : <a href="https\\github.com\manojap">Manoj AP</a>
+
+      </div>
+    </div>
+   </body>
+</html>

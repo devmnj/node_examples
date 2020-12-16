@@ -1,0 +1,20 @@
+.search_container{
+    /* background-color: goldenrod; */
+    display: flex; 
+    justify-content: center;
+    margin: 15%;
+}
+.search_box{
+    display: flex;
+    justify-self:center ;
+    inline-size: 720px;
+}
+.submitButton{
+margin-top: 10px; 
+
+}
+h1,h5,h4, h3{
+text-align: center;
+
+
+}
