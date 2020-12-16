@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js"
   },
-  "author": "",
+  "author": "manojap@outlook.com",
   "license": "ISC",
   "dependencies": {
     "ejs": "^3.1.5",
