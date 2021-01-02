@@ -19,7 +19,7 @@ router.post("/", async (req, res) => {
     role: req.body.role,
   });
   try {
-    const newUsr = await user.save();
+    const newUsr = await user.Save();
     res.status(201).json(user); //201 - successful
   } catch (error) {
     res.status(400).json({ message: error.message }); //400
